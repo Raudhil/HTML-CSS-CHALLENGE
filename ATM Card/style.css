@@ -1,0 +1,221 @@
+*{
+    margin: 0px;
+    font-family: Poppins;
+}
+
+body{
+    background-color: rgb(29, 26, 43);
+}
+
+
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgb(189, 46, 189), white);
+    transform: translate(-150px,-100px);
+}
+
+section::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: translate(150px,100px);
+    background-color: red;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgb(189, 46, 189), white);
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    z-index: 99;
+    transform-style: preserve-3d;
+}
+
+.container:hover{
+    transform: rotateY(180deg);
+    
+}
+
+.frame{
+    height: 170px;
+    width: 300px;
+    background-color: rgba(211, 211, 211,0.3);
+    box-shadow: 1px 10px 25px 5px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+    position: absolute;
+    z-index: 100;
+    
+    backface-visibility: hidden;
+}
+
+
+.atas{
+    display: flex;
+    align-items: center;
+    
+}
+
+.kanan1, .kanan1::after{
+    padding: 15px 0px 0px 20px;
+}
+
+.mastercard{
+    width: 15%;
+}
+
+.kanan1::after{
+    content: "Master Card";
+    position: absolute;
+    color: white;
+    top: 6px;
+    left: 35px;
+    font-size: 13px;
+}
+
+.kiri1{
+    position: relative;
+    top: 10px;
+    right: -10px;
+}
+
+.chip{
+    width: 50%;
+}
+
+.bawah{
+    padding-top: 17px;
+    display: flex;
+}
+
+.kiri2{
+    padding-left: 24px;
+}
+
+.kiri2 p{
+    color: white;
+}
+
+.number{
+    font-size: 8px;
+}
+
+.id{
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.name{
+    font-size: 10.5px;
+    margin-top: 24.5px;
+}
+
+.kanan2{
+    color: white;
+    position: relative;
+    left: 60px;
+    top: 40px;
+    
+    
+}
+
+.valid{
+    font-size: 8px;
+}
+
+.date{
+    font-size: 13px;
+}
+
+.back{
+    position: absolute;
+    transform: rotateY(180deg);
+    backdrop-filter: blur(25px);
+    z-index: 99;
+}
+
+.isi2{
+    height: 170px;
+    width: 300px;
+    background-color: rgba(211, 211, 211,0.3);
+    box-shadow: 1px 10px 25px 5px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+}
+
+.tulisan1{
+    font-size: 8px;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.barcode{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    
+}
+
+.garis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.isi_garis{
+    width: 75%;
+    height: 30px;
+    border-radius: 5px;
+    background: repeating-linear-gradient(
+        white,
+        white 3px,
+        rgb(168, 168, 168) 0px,
+        rgb(168, 168, 168) 5px
+    );
+}
+
+.nomor_unik{
+    background-color: white;
+    width: fit-content;
+    padding: 3px;
+    font-size: 7px;
+    height: fit-content;
+}
+
+.bawah2{
+    display: flex;
+    justify-content: center;
+    margin-top: 17.5px;
+}
+
+.tulisan2{
+    color: white;
+    font-size: 7px;
+    text-align: justify;
+    width: 81%;
+}
+
+.back{
+    
+}
