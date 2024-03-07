@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 400px;
+    width: 100%;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0px 6px 10px 5px rgba(0,0,0,0.5);
+}
+
+.atas{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    padding: 20px 25px 20px 20px;
+}
+
+.img1 img{
+    width: 40px;
+    margin-right: 10px;
+}
+.img1::after{
+    content: "Master Card";
+    color: white;
+    font-family: Poppins;
+    position: relative;
+    bottom: 13px;
+}
+
+.img2 img{
+    width: 40px;
+}
+
+.bawah{
+    color: white;
+    font-family: Poppins;
+    padding-left: 25px;
+    
+}
+
+.bawah h3{
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.bawah h2{
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 27.5px;
+}
+
+.bawah .h3t{
+    font-size: 15px;
+    margin-bottom: 27.5px;
+}
+
+.bawah h3:last-child{
+    font-size:16px;
+    font-weight: 300;
+}
+
+.date{
+    position: absolute;
+    top: 300px;
+    left: 620px;
+    
+}
+
