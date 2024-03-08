@@ -122,8 +122,9 @@
     display: flex;
     gap: 15px;
     justify-content: center;
-    margin-top: 140px;
-    
+    position: absolute;
+    bottom: 40px;
+    left: 22.5%;
 }
 
 .sociallogo1{
