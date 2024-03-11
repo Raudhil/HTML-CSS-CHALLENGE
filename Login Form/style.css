@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+.container{
+    background-color: #27ae60;
+    width: 300px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    
+}
+
+.form{
+    color: white;
+    font-family: Poppins;
+    font-weight: 100;
+    text-align: center;
+}
+
+.isi{
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+    
+}
+
+.isi1{
+    padding: 30px 20px 25px 20px;
+}
+
+.image{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: #27ae60;
+    padding: 7.7px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.id{
+    margin-bottom: 15px;
+    height: 45px;
+    display: flex;
+}
+
+.id input{
+    width: 100%;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+
+.id input:focus{
+    border-color: #27ae60;
+    outline: none;
+    box-shadow: inset 0px 0px 1px 1px rgba(64, 180, 39, 0.5);
+}
+
+.id1 input{
+    width: 100%;
+    padding-left: 0px;
+    background-color: #27ae60;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.id1 input:hover{
+    width: 100%;
+    padding-left: 0px;
+    background-color: #2f8f57;
+    color: white;
+    font-size: 18px;
+}
+
+.forgot, .member span{
+    text-align: start;
+    color: #27ae60;
+    cursor: pointer;
+    width: fit-content;
+    
+}
+
+.forgot:hover , .member span:hover{
+    text-decoration: underline;
+}
