@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    background-color: rgb(163, 91, 157);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.container{
+    width: 50vw;
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    flex-direction:column;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 3px rgba(0,0,0,0.5);
+}
+
+.title{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    padding-left: 25px;
+    display: flex;
+    align-items: end;
+}
+
+.isi{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.menu{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.a1,.a2,.a3,.a4,.a5{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    transition: 0.1s ease;
+    cursor: pointer;
+}
+
+.a1:hover,.a2:hover,.a3:hover,.a4:hover,.a5:hover{
+    transform: scale(1.05);
+}
+
+.menu input{
+    position: absolute;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+#r1:checked ~ .menu ul .a1{
+    background-color: rgb(147, 45, 214);
+    color: white;
+}
+
+#r1:checked ~ .menu ul .a1 .l1{
+    color: white;
+}
+
+
+#r2:checked ~ .menu ul .a2 .l2{
+    color: white;
+}
+
+#r2:checked ~ .menu ul .a2{
+    background-color: rgb(147, 45, 214);
+    color: white;
+}
+
+#r3:checked ~ .menu ul .a3{
+    background-color: rgb(147, 45, 214);
+    color: white;
+}
+
+#r3:checked ~ .menu ul .a3 .l3{
+    color: white;
+}
+
+#r4:checked ~ .menu ul .a4{
+    background-color: rgb(147, 45, 214);
+    color: white;
+}
+
+#r4:checked ~ .menul .a4 .l4{
+    color: white;
+}
+
+#r5:checked ~ .menu ul .a5{
+    background-color: rgb(147, 45, 214);
+    color: white;
+}
+
+#r5:checked ~ .menul .a5 .l5{
+    color: white;
+}
+
+.content{
+    max-width: 70%;
+}
+
+.content1,.content2,.content3,.content4,.content5{
+    position: absolute;
+    padding: 25px;
+    opacity: 0;
+    transition: 0.3s ease; 
+}
+
+.head{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content1 p, .content2 p, .content3 p, .content4 p, .content5 p{
+    width: 50%;
+    text-align: justify;
+}
+
+#r1:checked ~ .content .content1{
+    opacity: 1;
+}
+
+#r2:checked ~ .content .content2{
+    opacity: 1;
+}
+
+#r3:checked ~ .content .content3{
+    opacity: 1;
+}
+
+#r4:checked ~ .content .content4{
+    opacity: 1;
+}
+
+#r5:checked ~ .content .content5{
+    opacity: 1;
+}
