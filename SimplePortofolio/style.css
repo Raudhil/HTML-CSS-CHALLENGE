@@ -73,7 +73,7 @@ nav {
     align-items: center;
 }
 
-.material-symbols-outlined {
+.search>.material-symbols-outlined {
     position: absolute;
     margin-left: 5px;
     border-right: 1px solid black;
@@ -170,8 +170,8 @@ nav {
 
 .icon{
     position: absolute;
-    right: 30px;
-    bottom: 30px;
+    right: 10px;
+    bottom: 20px;
     cursor: pointer;
 }
 
