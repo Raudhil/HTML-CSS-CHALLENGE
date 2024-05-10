@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    background-color: purple;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+.container .form .fill .login h1::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    border-radius: 5px;
+    top: 155px;
+    background-color: red;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 27.5vw;
+    height: 75vh;
+    background-color: white;
+    max-width: 27.5vw;
+    border-radius: 15px;
+}
+
+.fill{
+    margin: 32.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.connect{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sosmed{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.twitter{
+    display: flex;
+    background-color: #08a0e9;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    align-items: center;
+    padding-left: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.facebook{
+    display: flex;
+    background-color: #0b66ff;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    align-items: center;
+    padding-left: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.twitter:hover, .facebook:hover{
+    transform: scale(1.02);
+}
+
+.sign{
+    margin-left: 10px;
+}
+.sign2{
+    margin-left: 15px;
+}
+
+.submit{
+    background: linear-gradient(90deg,rgb(255, 58, 123) 0%,rgb(180, 15, 70) 100%);
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit:hover{
+    background: linear-gradient(270deg,rgb(255, 58, 123) 0%,rgb(180, 15, 70) 100%);
+    letter-spacing: 1px;
+}
+
+input[type=text],input[type=password]{
+    padding: 7px;
+    border: 0;
+    width: 100%;
+}
+
+.input-box{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.underline::before{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 286px;
+    background-color: #ccc;
+}
+.underline::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 286px;
+    background-color: purple;
+    transform: scaleX(0);
+    transition: 0.3s ease;
+    transform-origin:left;
+}
+
+input[type=text]:focus,input[type=password]:focus{
+    outline: none;   
+}
+
+input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
