@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.container{
+    display: flex;
+    align-items: end;
+    height: 100vh;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px 20px 50px;
+    border-bottom: 1px solid white;
+}
+
+.footer{
+    width: 100vw;
+    height: fit-content;
+    background-color: #03045e;
+}
+
+h1{
+    color: white;
+    font-size: 35px;
+}
+
+.media{
+    color: white;
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.fa{
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.fa:hover{
+    transform: scale(1.05);
+}
+
+.fa-facebook{
+    background-color: #3b5998;
+}
+
+.fa-twitter{
+    background-color: #00acee;
+    padding: 10px 10px 10px 10px;
+}
+
+.fa-instagram{
+    background-color: rgb(196, 64, 86);
+    padding: 10px 12px 10px 12px;
+}
+
+.fa-youtube{
+    background-color: red;
+    padding: 10px 12px 10px 12px;
+}
+
+/* Content */
+
+.content{
+    display: flex;
+    gap: 150px;
+    padding: 20px 40px 0px 70px;
+}
+
+h4{
+    color: white;
+}
+
+h4::after{
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    display: flex;
+}
+
+p{
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+p:hover{
+    transform: scale(1.05);
+}
+
+.content5{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+input{
+    margin-top: 10px;
+    width: 200px;
+    padding: 5px 0px 5px 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+}
+
+button{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.copy{
+    padding-left: 70px;
+    margin-top: 40px;
+
+}
+
+.copy p{
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .content{
+        
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        
+    }
+
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .head{
+        flex-direction: column;
+    }
+}
