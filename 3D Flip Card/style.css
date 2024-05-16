@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    background: linear-gradient(90deg,#006769, #40A578);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.card{
+    display: flex;
+    border-radius: 25px;
+    transform-style: preserve-3d;
+    transition: 0.5s ease;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+.foto{
+    z-index: 1;
+    width: 320px;
+    height: 400px;
+    background-color: #f3aa36;
+    border-radius: 25px;
+    position: absolute;
+    transition: 0.3s ease;
+    backface-visibility: hidden;
+}
+
+.id{
+    width: 320px;
+    border-radius: 25px;    
+    height: 400px;
+    background-color: black;
+    z-index: 0;
+    box-shadow: inset 0 0 0 3px #f3aa36;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+    transform: rotateY(180deg);
+    
+}
+
+p{
+    width: 250px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.windah{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    padding: 3px;
+}
+
+.fill{
+    width: 150px;
+    height: 150px;
+    margin-top: 35px;
+}
+
+.windah2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+    border: 2px solid #f3aa36;
+    
+}
+
+.sosmed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.sosmed div{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.sosmed div:hover{
+    transform: scale(1.1);
+}
+
+.facebook{
+    background: linear-gradient(90deg,#006769, #40A578);
+    padding: 5px 12px;
+    border-radius: 25px;
+}
+
+.twitter{
+    background: linear-gradient(90deg,#006769, #40A578);
+    padding: 5px 9px;
+    border-radius: 25px;
+}
+
+.youtube{
+    background: linear-gradient(90deg,#006769, #40A578);
+    padding: 5px 8px;
+    border-radius: 25px;
+}
+
+.instagram{
+    background: linear-gradient(90deg,#006769, #40A578);
+    padding: 5px 10px;
+    border-radius: 25px;
+}
