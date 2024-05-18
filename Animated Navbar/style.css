@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    background-color: #ebe5e5;
+}
+
+input{
+    position: absolute;
+    display: none;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    width: 60vw;
+    height: 80px;
+    background-color: #ebe5e5;
+    display: flex;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.nav .hm div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 69px;
+    border-radius: 10px;
+    width: 120px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: opacity 0.3s ease;
+}
+
+.nav .hm div:hover{
+    background-color: #8e44ad;
+}
+
+.nav .hm div:hover p{
+    color: white;
+}
+
+.nav .hm div:hover i{
+    color: white;
+}
+
+p{
+    color: #8e44ad;
+}
+
+
+
+.nav .hm div i{
+    margin-right: 10px;
+    transform: scale(1.4);
+}
+
+.home i{
+    color: #8e44ad;
+}
+
+.blog i{
+    color: #8e44ad;
+}
+
+.code i{
+    color: #8e44ad;
+}
+
+.help i{
+    color: #8e44ad;
+}
+
+.about i{
+    color: #8e44ad;
+}
+
+/* Home */
+#home:checked ~ .container .nav .hm .home{
+    background-color: #8e44ad;
+}
+
+#home:checked ~ .container .nav .hm .home i{
+    color: white;
+}
+
+#home:checked ~ .container .nav .hm .home p{
+    color: white;
+}
+
+/* Blog */
+
+#home1:checked ~ .container .nav .hm .blog{
+    background-color: #8e44ad;
+}
+
+#home1:checked ~ .container .nav .hm .blog i{
+    color: white;
+}
+
+#home1:checked ~ .container .nav .hm .blog p{
+    color: white;
+}
+
+/* Code */
+
+#home2:checked ~ .container .nav .hm .code{
+    background-color: #8e44ad;
+}
+
+#home2:checked ~ .container .nav .hm .code i{
+    color: white;
+}
+
+#home2:checked ~ .container .nav .hm .code p{
+    color: white;
+}
+
+/* Help */
+
+#home3:checked ~ .container .nav .hm .help{
+    background-color: #8e44ad;
+}
+
+#home3:checked ~ .container .nav .hm .help i{
+    color: white;
+}
+
+#home3:checked ~ .container .nav .hm .help p{
+    color: white;
+}
+
+/* About */
+
+#home4:checked ~ .container .nav .hm .about{
+    background-color: #8e44ad;
+}
+
+#home4:checked ~ .container .nav .hm .about i{
+    color: white;
+}
+
+#home4:checked ~ .container .nav .hm .about p{
+    color: white;
+}
