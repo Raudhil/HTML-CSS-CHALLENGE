@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    transition: 0.3s ease   ;
+}
+
+body{
+    background:linear-gradient(135deg, #71b7e6 10%, #9b59b6 100%);
+}
+
+.nav{
+    width: 25vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+}
+
+.top{
+    height: 10%;
+    background-color: #3a3b41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid rgba(0, 0, 0,0.5);
+}
+
+h1{
+    color: white;
+    font-size: 27px;
+}
+
+.bottom{
+    height: 100%;
+    background-color: #7d808f;
+}
+
+input{
+    position: absolute;
+    display: none;
+}
+
+.button{
+    width: 40px;
+    height: 40px;
+    background-color: #7d808f;
+    position: absolute;
+    z-index: 1;
+    left: 23.5vw;
+    top: 12px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button i{
+    color: white;
+    transform: scale(1.5);
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.bars{
+    opacity: 0;
+}
+
+.home,.contact,.services,.settings,.image,.mail{
+    padding: 20px 40px;
+    display: flex;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255,255,0.2);
+    border-top: 1px solid rgba(255, 255,255,0.2);
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+.bottom div:hover{
+    box-shadow: -7px 0 10px 3px #222;
+}
+
+.home:hover{
+    box-shadow: -7px 0 10px 3px #222;
+}
+
+.bottom div i{
+    margin-right: 10px;
+    width: 25px;
+    transform: scale(1.5);
+}
+
+#check:checked ~ .nav{
+    left: -320px;
+}
+
+#check:checked ~ .dlm .button{
+    left: 20px;
+}
+
+#check:checked ~  .dlm .button .bars{
+    opacity: 1;
+    transform: rotate(180deg);
+}
+
+#check:checked ~ .dlm .button .exit{
+    opacity: 0;
+    transform: rotate(180deg);
+}
