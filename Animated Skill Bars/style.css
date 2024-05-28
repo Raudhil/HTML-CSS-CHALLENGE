@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    background-color: #4070f4;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 50%;
+    height: 50%;
+    background-color:#fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px 30px;
+}
+
+.line1,.line2,.line3,.line4{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
+
+.lining{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-radius: 15px;
+}
+
+.front{
+    width: 0;
+    height: 10px;
+    background-color: #4070f4;
+    border-radius: 15px;
+    animation: animate1 1s ease forwards;
+}
+
+@keyframes animate1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+.front2{
+    width: 75%;
+    height: 10px;
+    background-color: #4070f4;
+    border-radius: 15px;
+    animation: animate2 1s ease forwards;
+}
+
+@keyframes animate2{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+.front3{
+    width: 50%;
+    height: 10px;
+    background-color: #4070f4;
+    border-radius: 15px;
+    animation: animate3 1s ease forwards;
+}
+
+@keyframes animate3{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+.front4{
+    width: 25%;
+    height: 10px;
+    background-color: #4070f4;
+    border-radius: 15px;
+    animation: animate4 1s ease forwards;
+}
+
+@keyframes animate4{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 25%;
+    }
+}
+
+/* Text */
+
+.line1::before{
+    content: 'HTML';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.line2::before{
+    content: 'CSS';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.line3::before{
+    content: 'JavaScript';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.line4::before{
+    content: 'NodeJS';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Number */
+
+.number1{
+    width: 40px;
+    height: 20px;
+    background-color: #4070f4;
+    position: relative;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    bottom: 32px;
+    left: 0px;
+    animation: number1 1s ease forwards, opacity 0.5s ease ;
+}
+
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes number1{
+    0%{
+        left: 0px;
+    }
+
+    100%{
+        left: 445px;
+    }
+}
+
+.number1::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #4070f4;
+    bottom: -5px;
+    left: 15px;
+    transform: translateX(-50%);
+    transform: rotate(45deg);
+}
+
+.number2{
+    width: 40px;
+    height: 20px;
+    background-color: #4070f4;
+    position: relative;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    bottom: 32px;
+    left: 0px;
+    animation: number2 1s ease forwards, opacity 0.5s ease ;
+}
+
+.number2::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #4070f4;
+    bottom: -5px;
+    left: 15px;
+    transform: translateX(-50%);
+    transform: rotate(45deg);
+}
+
+@keyframes number2{
+    0%{
+        left: 0px;
+    }
+
+    100%{
+        left: 365px;
+    }
+}
+
+.number3{
+    width: 40px;
+    height: 20px;
+    background-color: #4070f4;
+    position: relative;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    bottom: 32px;
+    left: 0px;
+    animation: number3 1s ease forwards, opacity 0.5s ease ;
+}
+
+.number3::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #4070f4;
+    bottom: -5px;
+    left: 15px;
+    transform: translateX(-50%);
+    transform: rotate(45deg);
+}
+
+@keyframes number3{
+    0%{
+        left: 0px;
+    }
+
+    100%{
+        left: 235px;
+    }
+}
+
+.number4{
+    width: 40px;
+    height: 20px;
+    background-color: #4070f4;
+    position: relative;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    bottom: 32px;
+    left: 0px;
+    animation: number4 1.09s ease forwards, opacity 0.5s ease ;
+}
+
+.number4::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #4070f4;
+    bottom: -5px;
+    left: 15px;
+    transform: translateX(-50%);
+    transform: rotate(45deg);
+}
+
+@keyframes number4{
+    0%{
+        left: 0px;
+    }
+
+    100%{
+        left: 105px;
+    }
+}
+
+
+
+
