@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins
+}
+
+body{
+    background-color: #c95357;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Radio and Button */
+
+.button{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.click{
+    cursor: pointer;
+}
+
+.button:hover{
+    color: white;
+    background-color: rgb(219, 72, 72);
+}
+
+#radio{
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+#radio:checked ~ .container2{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#radio:checked ~ .container2 .popup{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Popup */
+
+.container2{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.1s ease;
+}
+
+.popup{
+    width: 25%;
+    height: 50%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    padding: 50px 30px;
+    opacity: 0;
+    transition: 0.1s ease;
+}
+
+.popup i{
+    transform: scale(5);
+    color: red;
+    margin-bottom: 40px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn label{
+    padding: 5px;
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#btn1{
+    background-color: rgb(10, 255, 10);
+    cursor: pointer;
+}
+
+#btn1:hover{
+    background-color: rgb(33, 150, 33);
+}
+
+#btn2{
+    background-color: red;
+    cursor: pointer;
+}
+
+#btn2:hover{
+    background-color: rgb(156, 16, 16);
+}
