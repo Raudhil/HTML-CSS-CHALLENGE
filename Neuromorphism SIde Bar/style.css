@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    background-color: #c95357;
+}
+
+/* Bars */
+
+.bars{
+    margin: 25px;
+    padding: 25px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.bars:hover{
+    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+.bars i{
+    color: black;
+    transform: scale(1.5);
+    transition: 0.3s ease;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.bars i:hover{
+    transform: scale(1.7);
+    color: blue;
+}
+
+/* Check */
+
+#check{
+    position: absolute;
+    display: none;
+}
+
+#check:checked ~ nav{
+    left: 0;
+}
+
+/* Navbar */
+
+nav{
+    position: absolute;
+    width: 25vw;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    left: -320px;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    font-size: 30px;
+    margin: 5px 0px 30px 40px;
+    cursor: pointer; 
+}
+
+.nav{
+    width: 100%;
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    padding: 0px 15px;
+}
+
+ul li{
+    padding: 10px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: -3px -3px 7px #ffffff, 2px 2px 5px #ceced1;
+    text-decoration: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+ul li:hover{
+    box-shadow: inset -3px -3px 7px #ffffff, inset 2px 2px 5px #ceced1;
+}
+
+nav label i{
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    transform: scale(1.7);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+nav label i:hover{
+    transform: scale(1.9);
+}
+
+.medsos{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.medsos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    transform: scale(1.5);
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: -3px -3px 7px #ffffff, 2px 2px 5px #ceced1;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.medsos div:hover{
+    box-shadow: inset -3px -3px 7px #ffffff, inset 2px 2px 5px #ceced1;
+    border-radius: 0px;
+}
+
+
+
+
