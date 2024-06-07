@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    text-align: justify;
+    transition: 0.1s ease;
+}
+
+body {
+    background-color: #c95357;
+}
+
+h2{
+    margin-bottom: 15px;
+}
+
+/* Footer */
+
+footer{
+    background-color: #111;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Container */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+/* Radio */
+
+input[type="radio"] {
+    display: none;
+}
+
+/* Left  */
+
+.left{
+    width: 33%;
+}
+
+.up{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.down{
+    color: white;
+    margin-bottom: 35px;
+}
+
+.contact label div{
+    width: fit-content;
+    cursor: pointer;
+}
+
+#r1:checked ~ .container .left .down .contact label .phone{
+    color: red;
+}
+
+#r2:checked ~ .container .left .down .contact label .email{
+    color: red;
+}
+
+.contact label i{
+    margin-right: 10px;
+    
+}
+
+
+/* Middle */
+
+
+.middle{
+    color: white;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+#r3:checked ~ .container .middle ul label:nth-child(1), #r4:checked ~ .container .middle ul label:nth-child(2), #r5:checked ~ .container .middle ul label:nth-child(3), #r6:checked ~ .container .middle ul label:nth-child(4), #r7:checked ~ .container .middle ul label:nth-child(5){
+    color: red;
+}
+
+/* Right */
+
+.right{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.sosmed{
+    display: flex;
+        
+}
+
+.sosmed label{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#r9:checked ~ .container .right .sosmed label:nth-child(1), #r10:checked ~ .container .right .sosmed label:nth-child(2), #r11:checked ~ .container .right .sosmed label:nth-child(3){
+    border: 1px solid red;
+    color: red;
+}
+
+.sosmed label i{
+    transform: scale(1.3);
+}
+
+.text{
+    padding: 10px;
+    outline: none;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.1s ease;
+    color: white;
+}
+
+.text:focus{
+    border: 1px solid red;
+}
+
+.btn{
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    transition: 0.1s ease;
+}
+
+.btn:focus{
+    background-color: #111;
+    border: 1px solid red;
+}
+
+@media only screen and (max-width: 800px) {
+    .container{
+        
+        justify-content: space-between;
+    }
+    .left{
+        width: 50%;
+    }
+
+    .up p{
+        width: 80%;
+    }
+    .middle{
+        width: 50%;
+    }
+    .right{
+        width: 100%;
+        
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    footer{
+        position: relative;
+    }
+    .left{
+        width: 100%;
+    }
+
+    .up p{
+        width: 80%;
+    }
+    .middle{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+}
