@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back{
+    border-radius: 15px;
+    padding: 3px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6, #c8ff00, #00ff11);
+}
+
+.back:hover{
+    animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+input{
+    padding: 20px 50px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
