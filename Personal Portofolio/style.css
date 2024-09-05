@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color: #222831;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Left */
+
+.left{
+    width: 25vw;
+    height: 90vh;
+    border: 1px solid;
+}
+
+/* Home */
+
+.home{
+    padding: 20px 20px 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid;
+    
+}
+
+.home p{
+    font-size: 15px;
+}
+
+/* Project */
+
+.project{
+    
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+.project h3{
+    margin: 10px;   
+    
+}
+
+.list div{
+    background-color: #F2E8C6;
+    padding: 10px;
+    border-top: 1px solid;
+}
+
+/* Work */
+
+.work{
+    text-align: center;
+    
+}
+
+.work h3{
+    margin: 10px;
+}
+
+.work div{
+    background-color: #F2E8C6;
+    padding: 10px;
+    text-align: left;
+    border-top: 1px solid;
+}
+
+/* Education */
+
+.education{
+    text-align: center;
+    border-top: 1px solid;
+}
+
+.education h3{
+    margin: 10px;
+}
+
+.education p{
+    text-align: left;
+    padding: 11.5px;   
+    background-color: #F2E8C6;
+    border-top: 1px solid;
+}
+
+
+
+
+
+
+/* Right */
+
+.right{
+    width: 70vw;
+    height: 90vh;
+    border: 1px solid;
+}
+
+/* Top */
+
+.top{
+    position: relative;
+    text-align: center;
+    padding: 100px;
+    border-bottom: double;
+}
+
+.top h3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px;
+}
+
+
+.list2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+}
+
+/* Mid */
+
+.mid{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.mid div{
+    width: 23.3vw;
+    
+}
+
+.b1{
+    border-right: 1px solid black;
+}
+
+.b1 h3{
+    padding: 15px;
+    
+}
+
+.b1 div{
+    padding: 10px 10px 10px 15px;
+    border-bottom: 1px solid;
+    
+}
+
+.b2{
+    border-right: 1px solid black;
+    border-bottom: 1px solid;
+}
+
+.atas{
+    border-bottom: 1px solid;
+    padding: 13px;
+}
+
+.bawah{
+    padding: 13px;
+    
+}
+
+.b3{
+    border-bottom: 1px solid;
+    
+}
+
+.ins{
+    padding: 15px;
+}
+
+.b3 p{
+    margin-top: 10px;
+}
+
+/* Bottom */
+
+.bottom h3{
+    padding: 15px;
+}
+
+.review{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 100px;
+}
+
+.review p{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    
+}
+
+span{
+    color: gray;
+    opacity: 0.5;
+}
+
+.copy{
+    text-align: center;
+    
+    padding: 22px;
+}
+
+
+
+
+
+
